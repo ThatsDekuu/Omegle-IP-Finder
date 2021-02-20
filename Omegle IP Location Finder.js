@@ -28,10 +28,10 @@ let getLocation = async (ip) => {
     response.json().then((json) => {
       const output = `
           ---------------------
-          Country: ${json.country_name}
-          State: ${json.state_prov}
-          City: ${json.city}
-          District: ${json.district}
+          Paese: ${json.country_name}
+          Stato: ${json.state_prov}
+          Città: ${json.city}
+          Quartiere: ${json.district}
           Lat / Long: (${json.latitude}, ${json.longitude})
           ---------------------
           `;
